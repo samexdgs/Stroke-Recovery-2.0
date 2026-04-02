@@ -60,72 +60,6 @@ Three classifiers trained in parallel on 2,000 simulated stroke survivor records
 
 ---
 
-## 🚀 Quick Start
-
-### 1. Clone and install
-```bash
-git clone https://github.com/samueloluwakoya/stroke-recovery-monitor.git
-cd stroke-recovery-monitor
-pip install -r requirements.txt
-```
-
-### 2. Run locally
-```bash
-streamlit run app.py
-```
-
-### 3. Register a patient
-Open the app → click "New patient? Register here" → fill in patient details, set a PIN and a family access code → share the family code with all family members.
-
----
-
-## ☁️ Deploy to Streamlit Cloud
-
-1. Push to a **public GitHub repository**
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect GitHub → select repo → main file: `app.py`
-4. Click **Deploy**
-
-### Enable email alerts (optional)
-In Streamlit Cloud → **Settings → Secrets**, add:
-```toml
-SENDER_EMAIL    = "your-gmail@gmail.com"
-SENDER_PASSWORD = "your-16-char-app-password"
-```
-See `.streamlit/secrets.toml` for Gmail App Password setup instructions.
-
----
-
-## 📁 File Structure
-
-```
-stroke-recovery-monitor/
-├── app.py              # Main Streamlit application
-├── database.py         # JSON-based patient data storage
-├── ml_engine.py        # ML models + recommendations engine
-├── alerts.py           # Email alert system
-├── requirements.txt    # Python dependencies
-├── .streamlit/
-│   └── secrets.toml    # Email config (not committed to git)
-└── data/               # Auto-created on first run
-    ├── patients.json
-    ├── logs.json
-    └── alerts.json
-```
-
----
-
-## 🔒 Privacy & Security
-
-- Patient PINs and family codes are stored as SHA-256 hashes — never as plain text
-- Family view is **read-only** — family members cannot modify patient data
-- All data stored locally in JSON files (Streamlit Cloud persistent storage)
-- No data sent to third parties (email alerts only if configured)
-
----
-
-## 📄 Academic Reference
-
 > **Samuel Oluwakoya** (2026). *Stroke Recovery Monitor v2.0: A Multi-User, Family-Connected ML Platform for Community Stroke Rehabilitation*. GitHub. https://github.com/samueloluwakoya/stroke-recovery-monitor
 
 Part of an ongoing research programme in ML-based neurological rehabilitation:
@@ -156,5 +90,3 @@ This tool is for **informational and research purposes only**. It is not a valid
 **Samuel Oluwakoya** — Computer science graduate, AI health researcher, and foot drop patient building machine learning tools for neurological rehabilitation.
 
 *"I build these tools because I live with the condition they address."*
-
-📧 Contact via GitHub Issues · 🔬 [ResearchGate](https://researchgate.net) · 💼 [LinkedIn](https://linkedin.com)
