@@ -5,13 +5,11 @@ Family-connected stroke recovery monitoring with machine learning and email aler
 This is the second tool in a series built by Samuel Oluwakoya, a computer science graduate and foot drop patient building ML-based rehabilitation systems. Version 2 came out of a specific problem: many stroke survivors in Nigeria have children living abroad who cannot physically check on them every day. The monitor needed two roles, not one.
 
 ---
-
 ## The problem this solves
 
 Stroke survivors often live alone or with elderly partners while their adult children are in a different country. A daily check-in system is only useful if the results reach the people who would act on them. This tool closes that loop. The patient logs their data in two minutes. Every family member who registered gets an email showing the recovery status, blood pressure readings, exercises completed, and any alerts the system flagged — all automatically.
 
 ---
-
 ## Two roles, one system
 
 **Patient role** handles daily data entry and sees their own recommendations and progress charts.
@@ -35,15 +33,12 @@ Three classifiers are trained on 2,000 simulated stroke survivor records. The be
 The recommendation engine sits on top of the ML output and adds specific daily guidance. High pain triggers modified exercise protocols. Poor sleep triggers spasticity-timing advice. Low mood triggers the post-stroke depression clinical pathway.
 
 ---
-
 ## Email alerts
 
 Alerts are sent automatically when blood pressure exceeds a safe threshold, when recovery status is classified as Needs Attention, and when a daily check-in is completed. The full summary is included in each alert so family members do not need to open the app to understand what happened.
 
 Setup requires a Gmail account with an app password, added as a Streamlit secret.
-
 ---
-
 ## Tech stack
 
 - Python 3.10
@@ -55,29 +50,6 @@ Setup requires a Gmail account with an app password, added as a Streamlit secret
 - pandas, numpy
 - SHA-256 password hashing (no plain-text credentials stored)
 
----
-
-## Running locally
-
-```bash
-git clone https://github.com/samueloluwakoya/stroke-recovery-monitor.git
-cd stroke-recovery-monitor
-pip install -r requirements.txt
-streamlit run app.py
-```
-
----
-
-## Deploying to Streamlit Cloud
-
-Push to GitHub, go to share.streamlit.io, connect the repo, set the main file to app.py, and deploy. To enable email alerts, add your Gmail credentials as Streamlit secrets:
-
-```toml
-SENDER_EMAIL    = "your-gmail@gmail.com"
-SENDER_PASSWORD = "your-16-char-app-password"
-```
-
----
 
 ## Project structure
 
@@ -90,9 +62,6 @@ stroke-recovery-monitor/
 ├── requirements.txt
 └── data/           Auto-created on first run
 ```
-
----
-
 ## Where this fits in the wider project
 
 1. Foot Drop Management App — live at fdmapp.streamlit.app
@@ -102,17 +71,13 @@ stroke-recovery-monitor/
 5. NeuroKinetics — camera-based upper limb motor tracking, no wearables needed
 
 ---
-
 ## Academic reference
 
-Samuel Oluwakoya (2026). Stroke Recovery Monitor v2: A Multi-User Family-Connected Machine Learning Platform for Community Stroke Rehabilitation. GitHub. https://github.com/samueloluwakoya/stroke-recovery-monitor
+Samuel Oluwakoya (2026). Stroke Recovery Monitor v2: A Multi-User Family-Connected Machine Learning Platform for Community Stroke Rehabilitation. GitHub. (https://github.com/samexdgs/Stroke-Recovery-2.0
 
 ---
-
 ## Disclaimer
 
 Research tool only. Not validated as a medical device. Does not constitute clinical advice. Always follow the guidance of your physiotherapist or rehabilitation physician.
-
 ---
-
 Samuel Oluwakoya — computer science graduate, foot drop patient, AI health researcher.
