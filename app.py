@@ -4,8 +4,8 @@ Stroke Recovery Monitor v2.0
 Multi-user family monitoring system for stroke recovery.
 Patient logs daily data → family receives real-time alerts and dashboard.
 
-Author: Samuel Oluwakoya
-GitHub: https://github.com/samueloluwakoya/stroke-recovery-monitor
+Author: Samuel Oluwakoya Tobi
+GitHub: https://github.com/samexdgs/Stroke-Recovery-2.0/
 """
 
 import streamlit as st
