@@ -82,7 +82,7 @@ def send_alert_email(patient_name, family_emails, alert_type, message, details=N
 
     for recipient in family_emails:
         payload = json.dumps({
-            "sender":      {"name": "Stroke Recovery Monitor", "email": "noreply@strokemonitor.app"},
+            "sender":      {"name": "Stroke Recovery Monitor", "email": "samuel@bloomgatelaw.com"},
             "to":          [{"email": recipient}],
             "subject":     subject,
             "htmlContent": html,
