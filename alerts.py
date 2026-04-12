@@ -1,16 +1,6 @@
 """
 alerts.py — Stroke Recovery Monitor v2.0
-Using Brevo (brevo.com) — free, sends to ANY email, no domain needed.
 
-SETUP for Samuel (once only):
-  1. brevo.com → Sign up free
-  2. Settings → SMTP & API → API Keys → Create API key → copy it
-  3. Streamlit app → Settings → Secrets → add:
-       BREVO_API_KEY = "xkeysib-your-key-here"
-  Done. Patients just type family emails. Nothing else needed.
-
-Free tier: 300 emails/day to ANY recipient, no domain verification.
-"""
 import streamlit as st
 from datetime import datetime
 import urllib.request, urllib.error, json
