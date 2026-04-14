@@ -37,8 +37,6 @@ The recommendation engine sits on top of the ML output and adds specific daily g
 ## Email alerts
 
 Alerts are sent automatically when blood pressure exceeds a safe threshold, when recovery status is classified as Needs Attention, and when a daily check-in is completed. The full summary is included in each alert so family members do not need to open the app to understand what happened.
-
-Setup requires a Gmail account with an app password, added as a Streamlit secret.
 ---
 ## Tech stack
 
