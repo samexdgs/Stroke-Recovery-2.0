@@ -1,6 +1,12 @@
 https://stroketracker2.streamlit.app/
 # Stroke Recovery Monitor v2
 
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0008--2126--0254-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0008-2126-0254)
+
+
 Family-connected stroke recovery monitoring with machine learning and email alerts.
 
 This is the second tool in a series built by Samuel Oluwakoya, a computer science graduate and foot drop patient building ML-based rehabilitation systems. Version 2 came out of a specific problem: many stroke survivors in Nigeria have children living abroad who cannot physically check on them every day. The monitor needed two roles, not one.
