@@ -74,6 +74,12 @@ stroke-recovery-monitor/
 
 Samuel Oluwakoya (2026). Stroke Recovery Monitor v2: A Multi-User Family-Connected Machine Learning Platform for Community Stroke Rehabilitation. GitHub. (https://github.com/samexdgs/Stroke-Recovery-2.0
 
+- Email: [soluwakoyat@gmail.com](mailto:soluwakoyat@gmail.com),
+- ORCID: [0009-0008-2126-0254](https://orcid.org/0009-0008-2126-0254)
+- GitHub: [github.com/samexdgs](https://github.com/samexdgs)
+- LinkedIn: [linkedin.com/in/samueloluwakoya](https://linkedin.com/in/samueloluwakoya)
+- Portfolio: [samueloluwakoya.netlify.app](https://samueloluwakoya.netlify.app)
+
 ---
 ## Disclaimer
 
